@@ -1,8 +1,11 @@
 import React, { Component } from "react";
-import { Dimensions, SafeAreaView, StyleSheet, Text, View } from "react-native";
+
+import { Dimensions, SafeAreaView, StyleSheet, Text, View, css } from "react-native";
 import Button from "./components/Button";
 import Row from "./components/Row";
 import calculator, { initialState } from "./util/calculator";
+
+import style from './App.module.css';
 
 
 // create class component of App
@@ -17,6 +20,9 @@ export default class App extends Component {
   // render method
   render() {
     return (
+        
+      //<View style={styles.add("container")}>
+      
       <View style={styles.container}>
         {/* Status bar here */}
         <SafeAreaView>
@@ -135,9 +141,6 @@ const styles = StyleSheet.create({
     height: 1.5 *  buttonWidth,
   },
 });
-
-
-
 
 
 function stateSize(number){
