@@ -1,0 +1,38 @@
+:root {
+    --button-width: calc(100vw / 4);
+    --screen-height: 100vh;
+    --from-top: calc(100vh - 6.5 * var(--button-width) - 2px);
+  }
+  
+  .container {
+    display: flex;
+    flex: 1;
+    background-color: #333b48;
+    justify-content: flex-end;
+    border-radius: 10px;
+    margin: 0 5px 10px 5px;
+    margin-top: var(--from-top);
+  }
+/*  
+  .value {
+    color: #fff;
+    background-color: #009c55;
+    text-align: right;
+    font-size: 100px;
+    margin: 10px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    height: calc(1.5 * var(--button-width));
+  }
+  
+  .valuesmaller {
+    color: #fff;
+    background-color: #009c55;
+    text-align: right;
+    font-size: 50px;
+    margin: 10px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    height: calc(1.5 * var(--button-width));
+  }
+  */
