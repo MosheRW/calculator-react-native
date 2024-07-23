@@ -1,0 +1,33 @@
+.container {
+    flex: 1;
+    background-color: "#333B48";
+    justify-content: "flex-end";    
+    border-radius: 10;
+    margin-left: 5;
+    margin-right: 5;
+    margin-bottom: 10;
+    margin-top: fromTop;
+
+}
+.value: {
+    color: "#fff";
+    background-color: "#009C55";
+    text-align: "right";
+    font-size: 100;
+    margin: 10;
+    margin-bottom: 10;    
+    border-radius: 12;
+    height: 1.5 *  buttonWidth;
+    
+}
+.valuesmaller {
+    color: "#fff",
+    background-color: "#009C55";
+    text-align: "right";
+    font-size: 50;
+    margin: 10;
+    margin-bottom: 10;
+    border-radius: 12;
+    height: 1.5 *  buttonWidth;
+}
+
