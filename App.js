@@ -10,8 +10,9 @@ export default class App extends Component {
   state = initialState;
 
   // handle tap method
-  HandleTap = (type, value) => {
+  HandleTap = (type, value) => {    
     this.setState((state) => calculator(type, value, state));
+    console.log(value)
   };
 
   // render method
@@ -20,7 +21,7 @@ export default class App extends Component {
       <View style={styles.container}>
         {/* Status bar here */}
         <SafeAreaView>
-        <Text style={stateSize(this.state.currentValue)}>  
+        <Text style={stateSize(this.state.currentValue)}>
             
             {parseFloat(this.state.currentValue).toLocaleString()}
           </Text>
@@ -50,11 +51,11 @@ export default class App extends Component {
           </Row>
 
           <Row>
-            <Button text="5" onPress={() => this.HandleTap("number", 5)}
+            <Button text="4" onPress={() => this.HandleTap("number", 4)}
               theme="leftButton"
              />
+            <Button text="5" onPress={() => this.HandleTap("number", 5)} />
             <Button text="6" onPress={() => this.HandleTap("number", 6)} />
-            <Button text="7" onPress={() => this.HandleTap("number", 7)} />
             <Button
               text="-" onPress={() => this.HandleTap("operator", "-")}            
               theme="rightButton"
