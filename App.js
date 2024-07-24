@@ -13,7 +13,7 @@ export default class App extends Component {
   HandleTap = (type, value) => {
     this.setState((state) => calculator(type, value, state));
   };
-.
+
   // render method
   render() {
     return (
